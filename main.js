@@ -46,6 +46,16 @@ function añadirImpresoras() {
     }
 }
 
+function buscarImpresora(nombre) {
+    const encontrada = impresorasTinta.includes(nombre);
+    if (encontrada) {
+        console.log (`La impresora ${nombre} está en la lista.`)
+    } else {
+        console.log (`La impresora ${nombre} no está en la lista.`)
+    }
+}
+
 añadirImpresoras()
 venderImpresora('tinta'); 
 mostrarVentasTotales(); 
+buscarImpresora('Impresora Tinta B');
